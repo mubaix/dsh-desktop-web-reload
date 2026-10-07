@@ -15,7 +15,7 @@ DSH 的客户端插件是在页面启动时按 profile 加载的。安装完一�
 ## 安装
 
 ```powershell
-dsh plugin --profile desktop add link:C:/Users/Thinkbook/Documents/deepseek-harness/plugins/dsh-desktop-web-reload
+dsh plugin --profile desktop add https://github.com/mubaix/dsh-desktop-web-reload
 ```
 
 然后把 `dsh-desktop-web-reload` 追加到 `~/.dsh/profiles/desktop/package.json` 的
