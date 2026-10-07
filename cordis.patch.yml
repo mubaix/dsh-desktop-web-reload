@@ -1,0 +1,14 @@
+# Bundle patch layer for dsh-desktop-web-reload.
+#
+# One row: mount the plugin so the loader resolves this package and serves its
+# Client half to the browser. The Node half is deliberately empty — the button
+# belongs to `lib/client.js`, which injects it into the Windows caption menubar
+# that the Electron preload owns (see the module doc there).
+#
+# No `config` block: this plugin has no settings, and therefore exports no
+# schemastery `Config`, so **Plugins** shows it as a row without a configuration
+# page. Nothing else in the base layer is repointed or disabled.
+
+- insert:
+    - id: desktop-web-reload
+      name: dsh-desktop-web-reload
